@@ -29,3 +29,16 @@
 
 ```csharp
 Steamworks.SteamClient.Init(0000000);
+```
+
+---
+
+## How to unlock/clear/check achievements:
+
+1. Both scripts follow a singleton pattern and has a static instance to easily access
+2. Inside the AchievementManager.cs file is a static class called AchievementIDs. I recommend using it to keep an organized list of all your achievements and their IDs. 
+3. Lastly call on AchievementManager.cs with the public methods such as 
+- UnlockAchievement(string achievementId)
+- ClearAchievement((string achievementId)
+- AchievementStatus((string achievementId)
+
