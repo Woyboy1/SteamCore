@@ -1,13 +1,13 @@
-# SteamCore
+# ➛ SteamCore
 
-## By Woyboy
+## ➛ By Woyboy
 
 **Unity Version:** Unity 6 (6000.0.45f1)  
 **Facepunch Steamworks Version:** 2.4.1
 
 ---
 
-## Features
+## ➛ Features
 
 - SteamIntegration.cs
 - AchievementManager.cs
@@ -15,7 +15,7 @@
 
 ---
 
-## How to Install and Implement
+## ➛ How to Install and Implement
 
 1. Download the package from the GitHub repository through a UnityPackage or by downloading the entire repository. (UnityPackage recommended)
 2. Move the package into your project's Assets folder.
@@ -32,14 +32,14 @@ Steamworks.SteamClient.Init(0000000);
 ```
 ---
 
-## Other Features of SteamIntegration.cs:
+## ➛ Other Features of SteamIntegration.cs:
 1. There are 2 simple methods you can use in this script, but this script should mainly just handle the simple integration of Steamworks in your app
-2. GetSteamName() => returns the Steam name (not username)
-3. GetPlayerSteamID() => returns the Steam player’s ID (ex: STEAM_0:1:12345678)
+2. `GetSteamName()` => returns the Steam name (not username)
+3. `GetPlayerSteamID()` => returns the Steam player’s ID (ex: STEAM_0:1:12345678)
 
 ---
 
-## How to unlock/clear/check achievements:
+## ➛ How to unlock/clear/check achievements:
 
 1. Both scripts follow a singleton pattern and have a static instance to easily access
 2. Inside the `AchievementManager.cs` file is a static class called AchievementIDs. I recommend using it to keep an organized list of all your achievements and their IDs. 
